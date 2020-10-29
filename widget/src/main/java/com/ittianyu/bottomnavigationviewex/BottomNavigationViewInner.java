@@ -65,12 +65,12 @@ public class BottomNavigationViewInner extends BottomNavigationView {
     public BottomNavigationViewInner(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         TintTypedArray a = ThemeEnforcement.obtainTintedStyledAttributes(context, attrs,
-                R.styleable.BottomNavigationView,
-                defStyleAttr, R.style.Widget_Design_BottomNavigationView,
-                new int[]{R.styleable.BottomNavigationView_itemTextAppearanceInactive,
-                        R.styleable.BottomNavigationView_itemTextAppearanceActive});
+                com.google.android.material.R.styleable.BottomNavigationView,
+                defStyleAttr, com.google.android.material.R.style.Widget_Design_BottomNavigationView,
+                new int[]{com.google.android.material.R.styleable.BottomNavigationView_itemTextAppearanceInactive,
+                        com.google.android.material.R.styleable.BottomNavigationView_itemTextAppearanceActive});
         // clear if you don't have set item icon tint list
-        if (!a.hasValue(R.styleable.BottomNavigationView_itemIconTint)) {
+        if (!a.hasValue(com.google.android.material.R.styleable.BottomNavigationView_itemIconTint)) {
             clearIconTintColor();
         }
         a.recycle();
